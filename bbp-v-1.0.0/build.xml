@@ -7,7 +7,7 @@
 -->
 <project basedir="." default="compile" name="Sample of Twitter bootstrap with Primeface">
  
-
+<!--test comment-->
  
 	<path id="compile.classpath">
 			<fileset dir="${basedir}/lib">
