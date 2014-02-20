@@ -9,8 +9,6 @@
  
 
  
- 
- 
 	<path id="compile.classpath">
 			<fileset dir="${basedir}/lib">
 				<include name="**/*.jar"/>
