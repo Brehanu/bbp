@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+  Filename: build.xml
+  Note: You have to change the followings according to your environment:
+          -<pathelement location="lib/testng/testng-5.14.7.jar"/>
+          -<pathelement location="bin"/>
+-->
+<project basedir="." default="compile" name="Sample of Twitter bootstrap with Primeface">
+ 
+
+ 
+ 
+ 
+	<path id="compile.classpath">
+			<fileset dir="${basedir}/lib">
+				<include name="**/*.jar"/>
+			</fileset>
+	</path>
+	
+	<target name="compile">
+		<javac srcdir="${basedir}/src" destdir="${basedir}/build/WEB-INF/classes" debug="true">
+				 <classpath refid="compile.classpath"/>
+		</javac>
+		
+		<copy todir="${basedir}/build">
+		            <fileset dir="${basedir}/web">
+		                <include name="**/*.js"/>
+		                <include name="**/*.jsp"/>
+		            	<include name="**/*.css"/>
+		            	<include name="**/*.*"/>
+		               
+		            </fileset>
+		 </copy>
+		
+	</target>
+	
+ 
+ 
+</project>
