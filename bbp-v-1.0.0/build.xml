@@ -5,7 +5,7 @@
           -<pathelement location="lib/testng/testng-5.14.7.jar"/>
           -<pathelement location="bin"/>
 -->
-<project basedir="." default="compile" name="Sample of Twitter bootstrap with Primeface">
+<project basedir="." default="compile" name="bbp v 1.0.0">
  
 <!--test comment-->
  

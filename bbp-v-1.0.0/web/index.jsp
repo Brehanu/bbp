@@ -415,15 +415,13 @@
 				</div>
 			</div>
 		</div>
-
-
 	</div>
 <script type="text/javascript">
    $(document).ready(function(){
 	   
 	   $( '#<%=blogId%>' ).click(function() {		  
 		   
-		 $.post( "/pages/addBlogLike.cmd", { blogId: '<%=blogId%>' } );
+		 $.post( '/pages/addBlogLike.cmd', { blogId: '<%=blogId%>' } );
 		
 		 alert("Like submittedd");
 		   
